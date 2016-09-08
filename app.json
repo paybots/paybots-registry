@@ -1,0 +1,13 @@
+{
+  "name": "Paybots Registry",
+  "description": "This is the Paybots registry service, based on Spring Cloud Netflix, Eureka and Spring Cloud Config.",
+  "env": {
+    "PAYBOTS_PASSWORD": {
+      "description": "Admin password for the registry (used to login after clicking 'View App'). Must be at least 5 characters.",
+      "required": "true"
+    }
+  },
+  "buildpacks": [
+    {"url": "heroku/java"}
+  ]
+}

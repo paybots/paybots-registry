@@ -1,0 +1,15 @@
+# ===================================================================
+# Paybots Sample Spring Cloud Config.
+# ===================================================================
+
+# Property used on app startup to check the config server status
+configserver:
+    name: Paybots Registry config server
+    status: Connected to the Paybots Registry config server!
+
+# Default JWT secret token (to be changed in production!)
+paybots:
+    security:
+        authentication:
+            jwt:
+                secret: my-secret-token-to-change-in-production

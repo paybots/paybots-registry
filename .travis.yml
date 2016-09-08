@@ -1,0 +1,11 @@
+os:
+  - linux
+services:
+  - docker
+install:
+  - docker build -t paybots/paybots-registry:travis .
+  - docker run --name paybots-registry -p 8761:8761 -d -t paybots/paybots-registry:travis
+script:
+  - sleep 30
+  - docker ps
+  - docker logs paybots-registry
